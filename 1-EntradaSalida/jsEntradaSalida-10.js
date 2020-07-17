@@ -12,7 +12,7 @@ function mostrarAumento()
 	
 	nImporte = parseFloat(document.getElementById("txtIdImporte").value);
 	nDescuento = nImporte*.75;
-	nNuevoImporte = nImporte - nDescuento
+	nNuevoImporte = nImporte - nDescuento;
 	
 	document.getElementById("txtIdResultado").value = nNuevoImporte;
 		
