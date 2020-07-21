@@ -11,7 +11,10 @@ function mostrar()
 		alert("No Es adolescente");	
 	}
 
+	if (!(nEdad>=13 && nEdad<=17)) {
 
+		alert("No Es adolescente");	
+	}
 	
 
 }//FIN DE LA FUNCIÓN

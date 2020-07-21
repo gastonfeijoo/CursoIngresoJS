@@ -9,7 +9,7 @@ function FahrenheitCentigrados ()
     
     nTemperatura = parseFloat(document.getElementById("txtIdTemperatura").value);
 
-    nCentigrados = (nTemperatura / 5) * 9 + 32;
+    nCentigrados = (nTemperatura - 32) * 5  / 9;
 
     alert("La temperatura en Centigrados es " + nCentigrados.toFixed(2));
 }
@@ -21,7 +21,7 @@ function CentigradosFahrenheit ()
     
     nTemperatura = parseFloat(document.getElementById("txtIdTemperatura").value);
 
-    nFahrenheit = (nTemperatura - 32) * 5  / 9;
+    nFahrenheit =  (nTemperatura / 5) * 9 + 32;
 
     alert("La temperatura en Fahrenheit es " + nFahrenheit.toFixed(2));
 }
