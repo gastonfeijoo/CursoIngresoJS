@@ -3,10 +3,18 @@ Al presionar el botón pedir un sexo
 'f' para femenino, 'm' para masculino.*/
 function mostrar()
 {
-	var sexoIngresado;
-	sexoIngresado = prompt("ingrese f ó m .");
+	let cSexo;
+	
+	cSexo = prompt("Ingrese el sexo...").toLowerCase;
 
+	while (cSexo !="f" && cSexo !="m") {
+		cSexo = prompt("Sexo Invalido...Ingrese el sexo...");
+	}
 
+	document.getElementById("txtIdSexo").value=cSexo;
 
-	txtIdSexo.value=sexoIngresado;
+	//isNaN()
+	//Lower case
+	
+
 }//FIN DE LA FUNCIÓN
